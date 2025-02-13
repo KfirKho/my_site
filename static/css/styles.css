@@ -1,0 +1,215 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables for Theme Colors */
+:root {
+    --primary-color: #f4bcdb;
+    --secondary-color: #feffe7;
+    --accent-color: #7bb5f8;
+    --darker-accent-color: #3d5a7a;
+    --text-color: #333;
+    --footer-color: #47495e;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.nav-header h2 {
+    color: var(--text-color);
+    font-size: 24px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+nav ul li i {
+    font-size: 24px;
+    color: var(--text-color);
+    vertical-align: middle;
+}
+
+nav ul li i:hover {
+    color: var(--accent-color);
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+main .text-container {
+    width: 60%;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+main p {
+    font-size: 20px;
+    text-align: center;
+}
+
+main img {
+    width: 35%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+/* Links */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-items: center; 
+    margin-right: 20px;
+}
+
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    /* text-align: center; */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: var(--darker-accent-color);
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: var(--footer-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.about-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+.about-section .text-container {
+    width: 60%;  /* Adjust text width as needed */
+}
+
+.about-section h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-section ul li {
+    text-align: center;
+
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-section img{
+    width: 35%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+}
